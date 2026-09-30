@@ -1,0 +1,335 @@
+/* ==========================================================================
+   TEMA LIVRARIA PIXEL ART - GERAL, COMPRADOR & VENDEDOR
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. FUNDO GERAL E CONFIGURAÇÕES DE BASE
+   -------------------------------------------------------------------------- */
+.root {
+    -fx-background-color: #c2d4b2;
+    -fx-font-family: "Courier New", "Consolas", monospace;
+    -fx-font-size: 13px;
+}
+
+.label {
+    -fx-text-fill: #281920;
+    -fx-font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   2. CABEÇALHOS, PLACAS E BADGES
+   -------------------------------------------------------------------------- */
+.moldura-madeira {
+    -fx-background-color: #472b1d;
+    -fx-border-color: #281920;
+    -fx-border-width: 3px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 4px;
+}
+
+.placa-titulo {
+    -fx-background-color: #dce7d1;
+    -fx-border-color: #281920;
+    -fx-border-width: 2px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 16px;
+    -fx-alignment: center;
+}
+
+.label-titulo-pixel {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #281920;
+}
+
+.badge-top {
+    -fx-background-color: #281920;
+    -fx-text-fill: #dce7d1;
+    -fx-border-color: #7ca077;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 4px 14px;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+}
+
+/* --------------------------------------------------------------------------
+   3. CARDS E PAINÉIS DE CONTEÚDO
+   -------------------------------------------------------------------------- */
+.card-principal {
+    -fx-background-color: #c2d4b2;
+    -fx-border-color: #281920;
+    -fx-border-width: 4px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(two-pass-box, #281920, 0, 0, 8, 8);
+}
+
+.card-conteudo {
+    -fx-background-color: rgba(220, 231, 209, 0.9);
+    -fx-border-color: #281920;
+    -fx-border-width: 3px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(two-pass-box, #281920, 0, 0, 4, 4);
+}
+
+/* --------------------------------------------------------------------------
+   4. BOTÕES PIXEL ART (Ações do Comprador e Vendedor)
+   -------------------------------------------------------------------------- */
+/* Botão Principal Escuro */
+.btn-pixel-primary {
+    -fx-background-color: #281920;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-color: #1a0f15;
+    -fx-border-width: 3px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(two-pass-box, #1a0f15, 0, 0, 0, 4);
+}
+.btn-pixel-primary:hover { -fx-background-color: #3a252f; }
+.btn-pixel-primary:pressed { -fx-effect: dropshadow(two-pass-box, #1a0f15, 0, 0, 0, 1); }
+
+/* Botão Secundário Azul (Comprador/Gestão) */
+.btn-pixel-secondary {
+    -fx-background-color: #3d5a73;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-color: #1c2e3d;
+    -fx-border-width: 3px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(two-pass-box, #1c2e3d, 0, 0, 0, 4);
+}
+.btn-pixel-secondary:hover { -fx-background-color: #4c6f8d; }
+
+/* Botão de Sucesso Verde (Cadastrar / Comprar) */
+.btn-pixel-success {
+    -fx-background-color: #3b5a38;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-color: #233821;
+    -fx-border-width: 3px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(two-pass-box, #233821, 0, 0, 0, 4);
+}
+.btn-pixel-success:hover { -fx-background-color: #527a4e; }
+
+/* Botão de Alerta/Remover Vermelho */
+.btn-pixel-danger {
+    -fx-background-color: #8b3a3a;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-color: #572222;
+    -fx-border-width: 3px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(two-pass-box, #572222, 0, 0, 0, 4);
+}
+.btn-pixel-danger:hover { -fx-background-color: #b85454; }
+
+/* Botão Voltar */
+.btn-voltar {
+    -fx-background-color: #dce7d1;
+    -fx-text-fill: #281920;
+    -fx-font-weight: bold;
+    -fx-border-color: #281920;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 12px;
+    -fx-cursor: hand;
+}
+.btn-voltar:hover { -fx-background-color: #ffffff; }
+
+/* --------------------------------------------------------------------------
+   5. CAMPOS DE FORMULÁRIO (ENTRADAS DE TEXTO E SELETORES)
+   -------------------------------------------------------------------------- */
+.text-field, .text-area, .combo-box {
+    -fx-background-color: #dce7d1;
+    -fx-text-fill: #281920;
+    -fx-prompt-text-fill: rgba(40, 25, 32, 0.5);
+    -fx-font-weight: bold;
+    -fx-border-color: #281920;
+    -fx-border-width: 2.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 6px 10px;
+}
+
+.text-field:focused, .text-area:focused, .combo-box:focused {
+    -fx-background-color: #f1f8e9;
+    -fx-border-color: #527a4e;
+    -fx-effect: dropshadow(two-pass-box, rgba(82, 122, 78, 0.4), 0, 0, 2, 2);
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #281920;
+    -fx-background-color: #dce7d1;
+}
+
+/* --------------------------------------------------------------------------
+   6. TELA DO COMPRADOR - LISTA DE LIVROS / CATÁLOGO
+   -------------------------------------------------------------------------- */
+.list-view {
+    -fx-background-color: #dce7d1;
+    -fx-border-color: #281920;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #281920;
+    -fx-padding: 8px;
+    -fx-border-color: #c2d4b2;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.list-cell:even {
+    -fx-background-color: #c2d4b2;
+}
+
+.list-cell:hover {
+    -fx-background-color: #a8be96;
+}
+
+.list-cell:selected {
+    -fx-background-color: #281920;
+    -fx-text-fill: #dce7d1;
+    -fx-font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   7. TELA DO VENDEDOR - TABELA DE ESTOQUE (TABLEVIEW)
+   -------------------------------------------------------------------------- */
+.table-view {
+    -fx-background-color: #dce7d1;
+    -fx-border-color: #281920;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #281920;
+    -fx-background-radius: 7px 7px 0 0;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: #472b1d;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #dce7d1;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
+
+.table-row-cell {
+    -fx-background-color: #dce7d1;
+    -fx-text-fill: #281920;
+    -fx-border-color: #c2d4b2;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #c2d4b2;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #a8be96;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #3d5a73;
+    -fx-text-fill: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   8. TELA DO VENDEDOR - PAINEL DE ABAS (TABPANE)
+   -------------------------------------------------------------------------- */
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab {
+    -fx-background-color: #a8be96;
+    -fx-border-color: #281920;
+    -fx-border-width: 2px 2px 0 2px;
+    -fx-border-radius: 8px 8px 0 0;
+    -fx-background-radius: 8px 8px 0 0;
+    -fx-padding: 6px 14px;
+}
+
+.tab:selected {
+    -fx-background-color: #281920;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #dce7d1;
+    -fx-font-weight: bold;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #281920;
+    -fx-font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   9. BADGES & NOTIFICAÇÕES
+   -------------------------------------------------------------------------- */
+.badge-green {
+    -fx-background-color: #527a4e;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4px;
+    -fx-padding: 2px 8px;
+}
+
+.badge-blue {
+    -fx-background-color: #3d5a73;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4px;
+    -fx-padding: 2px 8px;
+}
+
+.badge-red {
+    -fx-background-color: #8b3a3a;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4px;
+    -fx-padding: 2px 8px;
+}
+
+.box-info {
+    -fx-background-color: rgba(220, 231, 209, 0.85);
+    -fx-border-color: #281920;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 8px 12px;
+}
